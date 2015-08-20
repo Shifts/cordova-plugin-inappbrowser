@@ -579,7 +579,7 @@
 
     [self.toolbar setItems:@[self.closeButton, flexibleSpaceButton, self.backButton, fixedSpaceButton, self.forwardButton]];
 
-    self.view.backgroundColor = [UIColor colorWithRed:0.988 green:0.318 blue:0.318 alpha:1]; /*#fc5151*/
+    self.view.backgroundColor = [UIColor colorWithRed:0.231 green:0.349 blue:0.596 alpha:1] /*#3b5998 blue*/
     [self.view addSubview:self.toolbar];
     [self.view addSubview:self.addressLabel];
     [self.view addSubview:self.spinner];
@@ -597,7 +597,7 @@
     self.closeButton = nil;
     self.closeButton = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStyleBordered target:self action:@selector(close)];
     self.closeButton.enabled = YES;
-    self.closeButton.tintColor = [UIColor colorWithRed:0.988 green:0.318 blue:0.318 alpha:1]; /*#fc5151*/
+    self.closeButton.tintColor = [UIColor colorWithRed:0.231 green:0.349 blue:0.596 alpha:1] /*#3b5998 blue*/
 
     NSMutableArray* items = [self.toolbar.items mutableCopy];
     [items replaceObjectAtIndex:0 withObject:self.closeButton];
